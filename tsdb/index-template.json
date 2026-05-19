@@ -52,7 +52,8 @@
             "path_match": "labels.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -61,7 +62,8 @@
             "path_match": "container.labels.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -70,7 +72,8 @@
             "path_match": "dns.answers.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -79,7 +82,8 @@
             "path_match": "log.syslog.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -88,7 +92,8 @@
             "path_match": "fields.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -97,7 +102,8 @@
             "path_match": "docker.container.labels.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -105,7 +111,8 @@
           "kubernetes.labels.*": {
             "path_match": "kubernetes.labels.*",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -113,7 +120,8 @@
           "kubernetes.annotations.*": {
             "path_match": "kubernetes.annotations.*",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -121,7 +129,8 @@
           "aws.tags.*": {
             "path_match": "aws.tags.*",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -129,7 +138,8 @@
           "aws.dimensions.*": {
             "path_match": "aws.dimensions.*",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -145,7 +155,8 @@
           "azure.resource.tags.*": {
             "path_match": "azure.resource.tags.*",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -153,7 +164,8 @@
           "azure.dimensions.*": {
             "path_match": "azure.dimensions.*",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -248,7 +260,8 @@
             "path_match": "docker.event.actor.attributes.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -257,7 +270,8 @@
             "path_match": "docker.image.labels.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -462,7 +476,8 @@
             "path_match": "prometheus.labels.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -488,7 +503,8 @@
             "path_match": "sql.metrics.string.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -514,7 +530,8 @@
             "path_match": "system.process.env.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -532,7 +549,8 @@
             "path_match": "system.raid.disks.states.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -550,7 +568,8 @@
             "path_match": "vsphere.virtualmachine.custom_fields.*",
             "match_mapping_type": "string",
             "mapping": {
-              "type": "keyword"
+              "type": "keyword",
+              "time_series_dimension": true
             }
           }
         },
@@ -559,7 +578,8 @@
             "match_mapping_type": "string",
             "mapping": {
               "type": "keyword",
-              "ignore_above": 1024
+              "ignore_above": 1024,
+              "time_series_dimension": true
             }
           }
         }
